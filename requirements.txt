@@ -1,0 +1,4 @@
+pypdf-table-extraction
+opencv-python-headless
+ghostscript
+requests
