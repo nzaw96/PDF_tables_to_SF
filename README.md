@@ -1,7 +1,7 @@
 # PDF_tables_to_SF
 This repo has the step-by-step instructions on loading tables in PDF files to Snowflake as database tables.
 
-## Below are the Steps for configuring a Snowflake External Function w/ AWS
+## 01) Steps for configuring a Snowflake External Function w/ AWS
 
 Follow these steps to integrate Snowflake with AWS Lambda using API Gateway. For more detailed steps, check out the [Snowflake docs](https://docs.snowflake.com/en/sql-reference/external-functions-creating-aws-ui).
 
