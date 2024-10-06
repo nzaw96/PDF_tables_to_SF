@@ -28,3 +28,18 @@ Define the Lambda function that will process the requests from Snowflake.
 
 ### 6. Test the External Function
 Invoke the external function in Snowflake to verify it works as expected.
+
+## 02) Setting Up Local Development Environment
+
+Once you've finished setting up your External Function (and verified it to be working), you'll need to work on your lambda_function.py to add code that actually extract tables from PDF files and send them to Snowflake.
+
+Prerequisites: 
+- IDE (VS Code is recommended)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- [AWS CLI](https://aws.amazon.com/cli/)
+
+Below are the steps to build and push your Docker Image to Amazon ECR.
+
+### 1. Build the Docker image locally
+```bash
+   docker build -t pdf_tbl_extract .
