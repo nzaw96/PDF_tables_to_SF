@@ -24,6 +24,7 @@ Define the Lambda function that will process the requests from Snowflake.
 
 ### 5. Create External Function in Snowflake
 - Use `CREATE EXTERNAL FUNCTION` to define the external function and link it to the API integration created earlier.
+- Here's the [link](snowflake_scripts/01_configure_external_function.sql) to Snowflake script for creating API integration and External function.
 
 ### 6. Test the External Function
 Invoke the external function in Snowflake to verify it works as expected.
