@@ -1,5 +1,5 @@
 # PDF_tables_to_SF
-This repo has the step-by-step instructions on loading tables in PDF files to Snowflake as database tables.
+This repo has the step-by-step instructions on loading tables in PDF files to Snowflake as database tables an AWS External function in Snowflake that leverages an open-source python package called [Camelot](https://github.com/camelot-dev/camelot).
 
 ## 01) Configuring a Snowflake External Function w/ AWS
 
@@ -59,4 +59,4 @@ Below are the steps to build and push your Docker Image to Amazon ECR.
 
 ## 03) Creating a Snowpark Stored Procedure for Output Processing
 
-Here's the [link]() to the Snowflake script that you can run to create a Stored Procedure that will process the output of the external function. 
+Here's the [link](snowflake_scripts/02_create_python_sp_to_call_ext_func_and_process_data.sql) to the Snowflake script that you can run to create a Stored Procedure that will process the output of the external function. 
