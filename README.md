@@ -1,7 +1,7 @@
 # PDF_tables_to_SF
 This repo has the step-by-step instructions on loading tables in PDF files to Snowflake as database tables.
 
-## 01) Steps for configuring a Snowflake External Function w/ AWS
+## 01) Configuring a Snowflake External Function w/ AWS
 
 Follow these steps to integrate Snowflake with AWS Lambda using API Gateway. For more detailed steps, check out the [Snowflake docs](https://docs.snowflake.com/en/sql-reference/external-functions-creating-aws-ui).
 
@@ -56,3 +56,7 @@ Below are the steps to build and push your Docker Image to Amazon ECR.
 ```bash
    docker push <YOUR_AWS_ACCOUNT_NUMBER>.dkr.ecr.<YOUR_AWS_REGION>.amazonaws.com/repo_for_pdf_tbl_extract:<YOUR_IMAGE_TAG>
 ```
+
+## 03) Creating a Snowpark Stored Procedure for Output Processing
+
+Here's the [link]() to the Snowflake script that you can run to create a Stored Procedure that will process the output of the external function. 
