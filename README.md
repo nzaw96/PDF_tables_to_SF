@@ -43,7 +43,16 @@ Below are the steps to build and push your Docker Image to Amazon ECR.
 ### 1. Build the Docker image locally
 ```bash
    docker build -t pdf_tbl_extract .
-
+```
 ### 2. Authenticate Docker with Amazon ECR
 ```bash
    aws ecr get-login-password --region <YOUR_AWS_REGION> | docker login --username AWS --password-stdin <YOUR_AWS_ACCOUNT_NUMBER>.dkr.ecr.<YOUR_AWS_REGION>.amazonaws.com
+```
+### 3. Tag the Docker image before pushing to ECR
+```bash
+   docker tag pdf_tbl_extract:latest <YOUR_AWS_ACCOUNT_NUMBER>.dkr.ecr.<YOUR_AWS_REGION>.amazonaws.com/repo_for_pdf_tbl_extract:<YOUR_IMAGE_TAG>
+```
+### 4. Push the Docker image to ECR
+```bash
+   docker push <YOUR_AWS_ACCOUNT_NUMBER>.dkr.ecr.<YOUR_AWS_REGION>.amazonaws.com/repo_for_pdf_tbl_extract:<YOUR_IMAGE_TAG>
+```
